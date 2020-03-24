@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("jpg/back_whole.jpg") no-repeat fixed;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.burger_menu{
+    width: 70px;
+    height: 70px;
+    background: url("jpg/menu.svg");
+    background-size: contain;
+    cursor: pointer;
+    display: none;
+}
+h1{
+    margin-bottom: 7px;
+    background: linear-gradient(45deg, rgba(246,209,164,0.7),rgba(246,209,164,0));
+    width: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: -7px;
+}
+
+.block {
+    padding: 50px;
+}
+/*------------------------------------------------------------------------------------------------*/
+.header {
+    background: url("jpg/coffee.jpg") no-repeat;
+    height: 500px;
+    margin-bottom: 10px;
+	background-size: cover;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+nav {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    height: 50px;
+    display: flex;
+}
+
+nav li {
+    flex-flow: wrap;
+    width: 20%;
+    max-width: 1280px;
+    margin: 0 0 0 30px;
+    background-color: rgba(29, 5, 18, 0.98);
+    border-radius: 5px;
+    opacity: 0.5;
+    transition: 1s;
+    font-weight: bold;
+}
+
+nav a {
+    color: #FD9590;
+    display: block;
+    height: 50px;
+    padding: 0 30px;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav li:hover {
+    transition: 0s;
+    opacity: 1;
+}
+
+
+.content1{
+    background: url("jpg/back.jpg") no-repeat;
+    height: 500px;
+	background-size: 100% 100%;
+    margin-bottom: 10px;
+}
+
+.anim{
+    margin: 50px 0;
+}
+
+.animation_circle {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    background-color: rgba(106, 28, 6, 0.82);
+   /* animation-name: white_circle;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.5s;*/
+
+    animation: white_circle linear 2s infinite alternate 0.5s, red_circle linear 2s infinite alternate 0.5s;
+}
+
+
+@keyframes white_circle {
+    0% {
+        left: 0;
+    }
+    50% {
+     border-radius: 0;
+    }
+    100% {
+        left: 300px;
+    }
+}
+
+@keyframes red_circle {
+    0% {
+        background-color: rgba(106, 28, 6, 0.82);
+    }
+    50% {
+        background-color: #ff3131;
+    }
+    100% {
+        background-color: rgba(106, 28, 6, 0.82);
+    }
+}
+
+/*------------------------------------------------------------------------------------------------*/
+.content2{
+    background: url("jpg/coffee2.jpg") no-repeat center;
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+.content2 p{
+    background: linear-gradient(45deg, rgba(246,209,164,0.7),rgba(246,209,164,0));
+    width: 30%;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.parent {
+    display: flex;
+    align-content: stretch;
+    flex-direction: row-reverse;
+    height: 50%;
+    width: 50%;
+}
+
+.child {
+    flex: 1;
+    width: 100%;
+    height: 50px;
+    border: 2px solid black;
+	background: #E6B57A ;
+	animation-duration: 5s;
+    animation-name: kontent;
+    animation-iteration-count: infinite;
+	margin: 5px; border-radius: 20px;
+	text-align: center;
+	padding: 10px;
+}
+
+@keyframes kontent {
+    from {
+        background: #E6B57A ;
+    }
+
+    20% {
+        background: #F6D1A4 ;
+    }
+
+    55% {
+        background: #793E30 ;
+    }
+
+    to {
+        background: #4F1406 ;
+    }
+}
+
+.child:nth-child(2n){
+	animation-direction: alternate;
+}
+
+.child:nth-child(2n-1){
+	animation-direction: alternate-reverse;
+}
+
+.content2 table {
+    margin: 30px 60px;
+    width: 50%;
+}
+
+table {
+   /* border: 2px solid #1d0512;*/
+    border-collapse: collapse;
+    width: 400px;
+    border-radius: 20px
+}
+
+table caption {
+    background-color: rgba(247, 252, 247, 0.8);
+    border-radius: 20px 20px 0 0;
+    margin: 5px 0;
+}
+
+th{
+    /*border: 1px solid #1d0512;*/
+    border-radius: 7px;
+    background-color: #F6D1A4;
+    padding: 5px;
+    font-size: 20px;
+}
+
+td {
+    /*border: 1px solid #1d0512;*/
+    border-radius: 7px;
+    background-color: #F6D1A4;
+    padding: 5px;
+    font-size: 15px;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+.content3{
+    background: url("jpg/back.jpg") no-repeat;
+	background-size: 100% 100%;
+    height: 500px;
+    border: 5px solid black;
+    margin-bottom: 10px;
+}
+
+.content3 p {
+    text-align: justify;
+}
+
+.text{
+    font-size: 17px;
+    font-family: Calibri sans-serif;
+
+}
+
+.leftImg {
+    float: left;
+    margin: 0 20px 15px 0;
+    max-width: 250px;
+    max-height: 250px;
+    width: 20%;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+footer {
+    background: url("jpg/coffee3.jpg") no-repeat center;
+    background-size: cover;
+    height: 500px;
+
+}
+
+footer p {
+    color: white;
+}
+
+@media (max-width: 992px) {
+
+    nav li{
+        margin-bottom: 15px;
+        min-width: 140px;
+    }
+    .burger_menu{
+        display: block;
+    }
+    #main, .burger.active{
+        display: none;
+    }
+    #main.active{
+        display: block;
+    }
+    .burger_menu.active{
+        background: url("jpg/close.svg");
+    }
+
+
+    .parent {
+        flex-flow: column;
+    }
+    .text{
+        font-size: 15px;
+        font-family: Calibri sans-serif;
+    }
+    th {
+        font-size: 10px;
+    }
+    td {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 720px) {
+    .text{
+        font-size: 10px;
+        font-family: Calibri sans-serif;
+    }
+}
